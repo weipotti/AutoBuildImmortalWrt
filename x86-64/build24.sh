@@ -20,6 +20,15 @@ EOF
 echo "cat pppoe-settings"
 cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 
+Building package index...
+Collected errors:
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/targets/rockchip/armv8/packages/Packages.sig, wget returned 8.
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/packages/aarch64_generic/base/Packages.sig, wget returned 8.
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/targets/rockchip/armv8/kmods/6.6.122-1-23375d261da0c0e9da36857794905cf7/Packages.gz, wget returned 8.
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/packages/aarch64_generic/luci/Packages.sig, wget returned 8.
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/packages/aarch64_generic/packages/Packages.sig, wget returned 8.
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/packages/aarch64_generic/routing/Packages.gz, wget returned 8.
+ * opkg_download: Failed to download https://downloads.immortalwrt.org/releases/24.10.5/packages/aarch64_generic/telephony/Packages.gz, wget returned 8.
 if [ -z "$CUSTOM_PACKAGES" ]; then
   echo "⚪️ 未选择 任何第三方软件包"
 else
